@@ -1,4 +1,4 @@
-package lw01.unguided;
+package lw03.unguided;
 
 public class main {
     public static void main(String[] args) {

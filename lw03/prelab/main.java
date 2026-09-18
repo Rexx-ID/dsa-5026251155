@@ -1,4 +1,4 @@
-package lw01.unguided;
+package lw03.prelab;
 
 public class main {
     public static void main(String[] args) {
