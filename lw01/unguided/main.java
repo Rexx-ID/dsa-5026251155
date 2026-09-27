@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         
-        Scanner scanner = new Scanner(new File("lw01/unguided/rentals.txt"));
+        Scanner scanner = new Scanner(main.class.getResourceAsStream("lw01/unguided/rentals.txt"));
         List<Rental> rentals = new ArrayList<>();
 
         while (scanner.hasNext()) {
