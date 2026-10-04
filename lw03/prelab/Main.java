@@ -8,12 +8,12 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Program{
+public class Main{
     public static void main(String[] args){
 
         List<String> playlist = new LinkedList<>();
 
-        Scanner logPlaylist = new Scanner(Program.class.getResourceAsStream("playlist.txt"));
+        Scanner logPlaylist = new Scanner(Main.class.getResourceAsStream("playlist.txt"));
 
         while(logPlaylist.hasNextLine()){
             String baris = logPlaylist.nextLine().trim();
@@ -46,7 +46,7 @@ public class Program{
         Set<String> peserta = new LinkedHashSet<>();
         int duplikat = 0;
 
-        Scanner logPeserta = new Scanner(Program.class.getResourceAsStream("participants.txt"));
+        Scanner logPeserta = new Scanner(Main.class.getResourceAsStream("participants.txt"));
 
         while(logPeserta.hasNextLine()){
             String nama = logPeserta.nextLine().trim();
@@ -75,7 +75,7 @@ public class Program{
         Map<String, Integer> stok = new LinkedHashMap<>();
         int gagalJual = 0;
 
-        Scanner logInventory = new Scanner(Program.class.getResourceAsStream("inventory.txt"));
+        Scanner logInventory = new Scanner(Main.class.getResourceAsStream("inventory.txt"));
 
         while(logInventory.hasNextLine()){
             String baris = logInventory.nextLine().trim();
